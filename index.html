@@ -3,123 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="sitemap" type="application/xml" href="/service-portal/sitemap.xml">
-<title>Japan Life Tools — Free Tools for Foreigners in Japan</title>
-<meta name="description" content="Collection of free tools and guides for foreigners living in Japan. Tax calculator, emergency phrases, utility setup, salary data and more.">
-<meta name="keywords" content="Japan tools foreigners, Japan expat tools, Japan tax calculator, Japan utility setup, Japan salary data, Japan emergency phrases, Japan scam checker, Japan size converter, Japan money transfer, Japan NISA guide">
+<title>japan_dev_tools — 15+ Free Tools Shipped from Tokyo</title>
+<meta name="description" content="Solo developer building free tools in public from Tokyo. 15+ shipped products, $0 revenue. Japan life tools, productivity apps, AI coaches, and more.">
 <link rel="canonical" href="https://humancronadmin.github.io/service-portal/">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
-<link rel="manifest" href="manifest.json">
-<meta property="og:title" content="Japan Life Tools — Free Tools for Foreigners in Japan">
-<meta property="og:description" content="9 free tools and guides for foreigners living in Japan. Tax, salary, scams, emergencies, sizing and more.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<meta property="og:title" content="japan_dev_tools — 15+ Free Tools from Tokyo">
+<meta property="og:description" content="Solo dev. 15+ free tools. $0 revenue. Building in public.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://humancronadmin.github.io/service-portal/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Japan Life Tools — Free Tools for Foreigners in Japan">
-<meta name="twitter:description" content="9 free tools and guides for foreigners living in Japan. Tax, salary, scams, emergencies, sizing and more.">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Japan Life Tools","url":"https://humancronadmin.github.io/service-portal/","description":"Free tools and guides for foreigners living in Japan","potentialAction":{"@type":"SearchAction","target":"https://humancronadmin.github.io/service-portal/","query-input":"required name=search_term_string"}}
-</script>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh}
-.header{text-align:center;padding:3rem 1.5rem 2rem;background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%)}
-.header h1{font-size:1.8rem;font-weight:700;color:#f8fafc;margin-bottom:.5rem}
-.header p{color:#94a3b8;font-size:1rem;max-width:500px;margin:0 auto}
-.grid{display:grid;grid-template-columns:1fr;gap:1rem;padding:1.5rem;max-width:800px;margin:0 auto}
-.card{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:1.25rem;text-decoration:none;color:inherit;transition:transform .15s,border-color .15s;display:block}
-.card:hover{transform:translateY(-2px);border-color:#60a5fa}
-.card-emoji{font-size:2rem;margin-bottom:.75rem}
-.card-title{font-size:1.1rem;font-weight:600;color:#f1f5f9;margin-bottom:.4rem}
-.card-desc{font-size:.85rem;color:#94a3b8;line-height:1.5}
-.card-tag{display:inline-block;margin-top:.75rem;font-size:.7rem;padding:.2rem .6rem;border-radius:99px;background:#1e3a5f;color:#60a5fa;font-weight:500}
-.footer{text-align:center;padding:2rem 1.5rem;color:#475569;font-size:.8rem}
-.count{color:#60a5fa;font-weight:600}
-@media(min-width:600px){.grid{grid-template-columns:1fr 1fr}}
-
-@media(max-width:480px){h1{font-size:1.3rem}.container{padding:10px}body{font-size:14px}}
-</style>
-<!-- Google Analytics 4 -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@petitedevlog">
+<meta name="twitter:title" content="japan_dev_tools — 15+ Free Tools from Tokyo">
+<meta name="twitter:description" content="Solo dev. 15+ free tools. $0 revenue. Building in public.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{bg:'#0f172a',card:'#1e293b',border:'#334155',accent:'#60a5fa',muted:'#94a3b8'}}}}</script>
+<style>body{background:#0f172a}*:focus-visible{outline:2px solid #60a5fa;outline-offset:2px}</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1N5PR9Y0H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-H1N5PR9Y0H');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-H1N5PR9Y0H');</script>
 </head>
-<body>
-
-<div class="header">
-  <h1>Japan Life Tools</h1>
-  <p>Free tools &amp; guides for foreigners living in Japan</p>
+<body class="text-slate-300 min-h-screen">
+<header class="text-center py-12 px-4 sm:py-16">
+<h1 class="text-2xl sm:text-3xl font-bold text-white font-mono tracking-tight">japan_dev_tools</h1>
+<p class="mt-3 text-muted max-w-md mx-auto text-sm sm:text-base">15+ free tools shipped from Tokyo. $0 revenue. Building in public.</p>
+</header>
+<nav id="filters" class="flex flex-wrap justify-center gap-2 px-4 mb-6 max-w-3xl mx-auto"></nav>
+<main id="grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 px-4 pb-6 max-w-5xl mx-auto"></main>
+<footer class="text-center py-8 px-4 text-xs text-slate-500 space-y-2">
+<div class="flex justify-center gap-4">
+<a href="https://github.com/humancronadmin" target="_blank" rel="noopener" class="hover:text-accent">GitHub</a>
+<a href="https://x.com/petitedevlog" target="_blank" rel="noopener" class="hover:text-accent">X @petitedevlog</a>
 </div>
-
-<div class="grid">
-
-  <a class="card" href="https://humancronadmin.github.io/japan-tax-calculator/" target="_blank" rel="noopener">
-    <div class="card-emoji">💰</div>
-    <div class="card-title">Japan Tax Calculator</div>
-    <div class="card-desc">Calculate your take-home pay — income tax, resident tax, social insurance explained in English.</div>
-    <span class="card-tag">Calculator</span>
-  </a>
-
-  <a class="card" href="https://humancronadmin.github.io/japan-tech-salary/" target="_blank" rel="noopener">
-    <div class="card-emoji">💻</div>
-    <div class="card-title">Tech Salary Explorer</div>
-    <div class="card-desc">Compare tech salaries across Japan by role, city, and experience level.</div>
-    <span class="card-tag">Data</span>
-  </a>
-
-  <a class="card" href="https://humancronadmin.github.io/money-transfer-japan/" target="_blank" rel="noopener">
-    <div class="card-emoji">🏦</div>
-    <div class="card-title">Money Transfer Comparison</div>
-    <div class="card-desc">Compare Wise, Revolut, SBI Remit and more. See fees, rates, and scam check.</div>
-    <span class="card-tag">Comparison</span>
-  </a>
-
-  <a class="card" href="https://humancronadmin.github.io/japan-scam-checker/" target="_blank" rel="noopener">
-    <div class="card-emoji">🛡️</div>
-    <div class="card-title">Japan Scam Checker</div>
-    <div class="card-desc">Check if a business or offer is a known scam targeting foreigners in Japan.</div>
-    <span class="card-tag">Safety</span>
-  </a>
-
-  <a class="card" href="https://humancronadmin.github.io/japan-emergency-phrases/" target="_blank" rel="noopener">
-    <div class="card-emoji">🚨</div>
-    <div class="card-title">Emergency Phrases</div>
-    <div class="card-desc">Copy essential Japanese phrases instantly for medical, police, and disaster situations.</div>
-    <span class="card-tag">Guide</span>
-  </a>
-
-  <a class="card" href="https://humancronadmin.github.io/japan-utility-setup/" target="_blank" rel="noopener">
-    <div class="card-emoji">🔌</div>
-    <div class="card-title">Utility Setup Guide</div>
-    <div class="card-desc">Step-by-step guide to electricity, gas, water, internet &amp; mobile in Japan.</div>
-    <span class="card-tag">Guide</span>
-  </a>
-
-  <a class="card" href="https://humancronadmin.github.io/nisa-investment-guide/" target="_blank" rel="noopener">
-    <div class="card-emoji">📈</div>
-    <div class="card-title">Beyond NISA: Investment Guide</div>
-    <div class="card-desc">Maxed out NISA? Compare iDeCo, taxable accounts, overseas brokers and more.</div>
-    <span class="card-tag">Finance</span>
-  </a>
-
-</div>
-
-<div style="text-align:center;padding:1.5rem;max-width:600px;margin:0 auto;">
-  <div style="background:linear-gradient(135deg,#1e3a5f,#1e293b);border:1px solid #334155;border-radius:12px;padding:20px 16px;">
-    <p style="font-weight:700;font-size:1.05rem;color:#f1f5f9;margin:0 0 6px;">Did these tools save you time?</p>
-    <p style="font-size:0.85rem;color:#94a3b8;margin:0 0 14px;">All tools are 100% free, no ads. Your support keeps them running.</p>
-    <a href="https://japantoolkit.lemonsqueezy.com/" target="_blank" rel="noopener" style="display:inline-block;padding:10px 20px;background:#7c3aed;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.9rem;min-height:44px;line-height:24px;">Support Us</a>
-  </div>
-</div>
-
-<div class="footer">
-  <span class="count">7</span> tools available &middot; Built for the Japan expat community
-</div>
-
-<script>if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");</script>
+<p>Shipped solo from Tokyo</p>
+</footer>
+<script>
+const P=[
+{n:"OneTask",d:"ADHD-friendly single-task app with AI task breakdown",u:"https://humancronadmin.github.io/onetask/",c:"Productivity"},
+{n:"Zen Coach",d:"AI life coach powered by Zen philosophy",u:"https://humancronadmin.github.io/zen-coach/",c:"Health"},
+{n:"NihongoVS",d:"Side-by-side Japanese grammar comparison tool",u:"https://humancronadmin.github.io/nihongo-vs/",c:"Language"},
+{n:"Communication Decoder",d:"Decode hidden meanings in Japanese workplace phrases",u:"https://humancronadmin.github.io/decoder.html",c:"Language"},
+{n:"TinyFit Jewelry",d:"Jewelry size database for petite hands (ring size 2-4)",u:"https://humancronadmin.github.io/tiny-fit-jewelry/",c:"Lifestyle"},
+{n:"Japan Tax Calculator",d:"Calculate take-home pay with tax and insurance breakdown",u:"https://humancronadmin.github.io/japan-tax-calculator/",c:"Japan Life"},
+{n:"Tech Salary Explorer",d:"Compare tech salaries across Japan by role and city",u:"https://humancronadmin.github.io/japan-tech-salary/",c:"Japan Life"},
+{n:"Money Transfer Compare",d:"Compare fees and rates for Wise, Revolut, SBI Remit and more",u:"https://humancronadmin.github.io/money-transfer-japan/",c:"Japan Life"},
+{n:"Scam Checker",d:"Check if a business is a known scam targeting foreigners",u:"https://humancronadmin.github.io/japan-scam-checker/",c:"Japan Life"},
+{n:"Fake Detector",d:"Verify Japanese shops and spot counterfeit goods",u:"https://humancronadmin.github.io/japan-fake-detector/",c:"Japan Life"},
+{n:"Emergency Phrases",d:"Copy essential Japanese phrases for emergencies instantly",u:"https://humancronadmin.github.io/japan-emergency-phrases/",c:"Japan Life"},
+{n:"Utility Setup Guide",d:"Step-by-step guide to electricity, gas, water and internet",u:"https://humancronadmin.github.io/japan-utility-setup/",c:"Japan Life"},
+{n:"Housing Troubleshooter",d:"Verify move-out charges against official government guidelines",u:"https://humancronadmin.github.io/japan-housing-help/",c:"Japan Life"},
+{n:"Size Converter",d:"Convert clothing and shoe sizes between Japan and your country",u:"https://humancronadmin.github.io/japan-size-converter/",c:"Japan Life"},
+{n:"Advanced Finance Guide",d:"Complex tax and investment scenarios for expats in Japan",u:"https://humancronadmin.github.io/japan-advanced-finance/",c:"Finance"},
+{n:"NISA Investment Guide",d:"What to do after maxing out NISA — iDeCo, taxable accounts and more",u:"https://humancronadmin.github.io/nisa-investment-guide/",c:"Finance"},
+{n:"Proxy Buying Helper",d:"Compare proxy services for buying items from Japan",u:"https://humancronadmin.github.io/japan-proxy-helper/",c:"Japan Life"},
+{n:"Foreign Grocery Finder",d:"Find hard-to-get ingredients at stores near you in Japan",u:"https://humancronadmin.github.io/foreign-grocery-finder/",c:"Japan Life"},
+{n:"School Finder",d:"Compare 30+ Japanese language schools side by side",u:"https://humancronadmin.github.io/japanese-school-finder/",c:"Japan Life"},
+{n:"Wheelchair Access Guide",d:"Wheelchair accessibility info for Tokyo locations",u:"https://humancronadmin.github.io/wheelchair-accessibility-guide/",c:"Japan Life"},
+{n:"JapanProFinder",d:"Curated directory of English-speaking professionals in Japan",u:"https://humancronadmin.github.io/japan-pro-finder/",c:"Japan Life"},
+{n:"Mensetsu AI",d:"AI interview coach for Japan — scored on language, logic and culture",u:"https://mensetsu-ai.onrender.com",c:"Productivity"},
+];
+const cats=[...new Set(P.map(p=>p.c))].sort();
+let active="All";
+const fEl=document.getElementById("filters"),gEl=document.getElementById("grid");
+function btn(label){
+const b=document.createElement("button");
+b.textContent=label;b.className="px-3 py-1.5 text-xs sm:text-sm rounded-full font-medium min-h-[44px] transition-colors "+(active===label?"bg-accent text-slate-900":"bg-card text-muted border border-border hover:border-accent");
+b.onclick=()=>{active=label;render()};return b;
+}
+function card(p){
+return `<a href="${p.u}" target="_blank" rel="noopener" class="block bg-card border border-border rounded-xl p-4 hover:border-accent transition-colors group">
+<h2 class="text-white font-semibold text-sm sm:text-base group-hover:text-accent">${p.n}</h2>
+<p class="text-muted text-xs sm:text-sm mt-1 leading-relaxed">${p.d}</p>
+<div class="flex justify-between items-center mt-3">
+<span class="text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-slate-800 text-slate-400">${p.c}</span>
+<span class="text-accent text-xs font-medium">Try it &rarr;</span>
+</div></a>`;
+}
+function render(){
+fEl.innerHTML="";gEl.innerHTML="";
+fEl.appendChild(btn("All"));cats.forEach(c=>fEl.appendChild(btn(c)));
+const items=active==="All"?P:P.filter(p=>p.c===active);
+gEl.innerHTML=items.map(card).join("");
+}
+render();
+</script>
 </body>
 </html>
